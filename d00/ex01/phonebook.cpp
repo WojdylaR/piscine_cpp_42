@@ -1,22 +1,21 @@
-#ifndef PHONEBOOK_HPP
-# define PHONEBOOK_HPP
+#include "phonebook.hpp"
 
-#include "user.hpp"
-
-class Phonebook
+Phonebook::Phonebook() : m_nb_user(0)
 {
-	public :
 
-	Phonebook();
-	~Phonebook()
-	void	add();
-	void	search();
-	void	exit();
+}
 
-	private :
+void	add()
+{
 
-	int		nb_user;
-	char	*tab_user;
-};
+}
 
-#endif
+void	search()
+{
+
+}
+
+void	exit()
+{
+	
+}

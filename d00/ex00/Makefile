@@ -4,7 +4,7 @@ NAME = megaphone
 
 FILE_SRC = megaphone.cpp
 FILE_OBJ = $(FILE_SRC:.cpp=.o)
-CC = #-Wall -Wextra -Werror
+CC = -Wall -Wextra -Werror
 
 all: $(NAME)
 
