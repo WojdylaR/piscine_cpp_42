@@ -12,7 +12,7 @@ FILE_OBJ = $(FILE_SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(FILE_SRC) $(HEADER)
-	clang++ -Wall -Wextra -Werror $(HEADER) $(FILE_SRC) -o $(NAME)
+	clang++ -Wall -Wextra -Werror $(HEADER) $(FILE_SRC)
 
 clean:
 	@rm -rf $(FILE_OBJ)

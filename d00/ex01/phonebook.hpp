@@ -11,12 +11,11 @@ class Phonebook
 	~Phonebook();
 	void	add();
 	void	search();
-	void	exit();
 
 	private :
 
 	int		m_nb_user;
-	Contact	tab_cont[8];
+	Contact	cont[8];
 };
 
 #endif
