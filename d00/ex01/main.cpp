@@ -6,6 +6,7 @@ int	main()
 	Contact		contact;
 	std::string temp;
 
+	std::cout << "Entrez commande, ADD, SEARCH, ou EXIT" << std::endl;
 	while (1)
 	{
 		std::cin >> temp;
@@ -18,6 +19,6 @@ int	main()
 			if (temp.compare("SEARCH") == 0)
 				phonebook.search();
 		else
-			std::cout << "Commande invalide !" << std::endl << std::endl;
+			std::cout << std::endl << "Commande invalide !" << std::endl << "Entrez commande, ADD, SEARCH, ou EXIT" <<std::endl;
 	}
 }

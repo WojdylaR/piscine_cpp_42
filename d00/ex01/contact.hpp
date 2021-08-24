@@ -18,6 +18,12 @@ class Contact
 	void	ch_n_n(std::string n_n);
 	void	ch_num(std::string num);
 	void	ch_s(std::string s);
+	std::string	get_f_name();
+	std::string	get_l_name();
+	std::string	get_n_name();
+	std::string	get_num_phone();
+	std::string	get_secret();
+	int			get_index();
 
 	private:
 

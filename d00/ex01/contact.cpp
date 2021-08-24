@@ -45,3 +45,31 @@ void	Contact::ch_s(std::string s)
 {
 	m_secret = s;
 }
+
+std::string	Contact::get_f_name()
+{
+	return (m_f_name);
+}
+
+std::string	Contact::get_l_name()
+{
+	return (m_l_name);
+}
+
+std::string	Contact::get_n_name()
+{
+	return (m_n_name);
+}
+std::string	Contact::get_num_phone()
+{
+	return (m_num_phone);
+}
+std::string	Contact::get_secret()
+{
+	return (m_secret);
+}
+
+int	Contact::get_index()
+{
+	return (m_contact_n - 1);
+}
