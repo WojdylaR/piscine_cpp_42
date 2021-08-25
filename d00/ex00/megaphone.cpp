@@ -1,8 +1,6 @@
 #include <iostream>
 #include <ctype.h>
 
-using namespace std; 
-
 int main(int argc, char **argv)
 {
 	int i;
@@ -11,7 +9,7 @@ int main(int argc, char **argv)
 	x = 0;
 
 	if (argc == 1)
-		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << endl;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
     else
 	{
 		while (++x < argc)
@@ -23,7 +21,7 @@ int main(int argc, char **argv)
 					c = toupper(argv[x][i]);
 				else
 					c = argv[x][i];
-				cout << c;
+				std::cout << c;
 				i++;
 			}
 		}

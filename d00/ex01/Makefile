@@ -1,25 +1,31 @@
-.DEFAULT_GOAL := all
+NAME     := phonebook
 
-NAME = PhoneBook
+SRCS     := srcs/phonebook.cpp \
+			srcs/contact.cpp \
+			srcs/main.cpp
 
-HEADER		=	contact.hpp \
-				phonebook.hpp
+HDRS     := include/contact.hpp \
+			include/phonebook.hpp
 
-FILE_SRC = contact.cpp main.cpp phonebook.cpp
+OBJS     := $(SRCS:.cpp=.o)
 
-FILE_OBJ = $(FILE_SRC:.cpp=.o)
+CXX      := g++
+CXXFLAGS := -std=c++98 -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): $(FILE_SRC) $(HEADER)
-	clang++ -Wall -Wextra -Werror $(HEADER) $(FILE_SRC)
+$(NAME): $(OBJS) $(HDRS)
+	@$(CXX) $(OBJS) -o $@
+
+%.o: %.cpp %.hpp
+	$(CXX) $(CXXFLAGS) -o $@ -c $<
 
 clean:
-	@rm -rf $(FILE_OBJ)
+	@rm -f $(OBJS)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -f $(NAME)
 
-re: fclean all
+re:     fclean all
 
-.PHONY: all clean fclean
+.PHONY: all clean fclean format re
