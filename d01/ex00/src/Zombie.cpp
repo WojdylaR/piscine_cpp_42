@@ -1,6 +1,6 @@
 #include "../include/Zombie.hpp"
 
-Zombie::Zombie()
+Zombie::Zombie() : _name("jojo")
 {
 }
 
