@@ -6,5 +6,6 @@ void    Zombie::randomChump(std::string name)
 
     zombie = new Zombie(name);
     zombie->announce();
+    std::cout << std::endl;
     delete zombie;
 }
