@@ -10,8 +10,3 @@ Zombie* Zombie::ZombieHorde(int N, std::string name)
         horde[i]._name = name;
     return (horde);
 }
-
-void    Zombie::ft_delete()
-{
-    delete this->horde;
-}
