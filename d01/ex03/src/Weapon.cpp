@@ -1,8 +1,13 @@
 #include "../include/Weapon.hpp"
 
-Weapon::Weapon()
+Weapon::Weapon() : _type("default type")
 {
 
+}
+
+Weapon::Weapon(std::string type) : _type(type)
+{
+	
 }
 
 Weapon::~Weapon()
