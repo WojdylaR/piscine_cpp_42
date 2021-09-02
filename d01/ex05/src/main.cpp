@@ -1,0 +1,10 @@
+#include "../include/Karen.hpp"
+
+int main(int argc, char **argv)
+{
+    Karen karen;
+    if (argc != 2)
+        std::cout << "Mauvais nombre d'argument" << std::endl;
+    else
+        karen.complain(argv[1]);
+}
