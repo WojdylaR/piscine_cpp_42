@@ -26,15 +26,22 @@ void    Karen::complain(std::string const level)
     {
         case 100 :
             debug();
-
+            info();
+            warning();
+            error();
+            break;
         case 105 :
             info();
-
+            warning();
+            error();
+            break;
         case 119 :
             warning();
-
+            error();
+            break;
         case 101 :
             error();
+            break;
     }
 }
 
