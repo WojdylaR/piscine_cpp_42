@@ -2,6 +2,7 @@
 # define CAT_HPP
 
 #include "animal.hpp"
+#include "brain.hpp"
 
 class Cat : public Animal
 {
@@ -14,7 +15,8 @@ class Cat : public Animal
 
         Cat & operator=(Cat const &op);
 
-    protected :
+    private :
+        Brain* _brain;
 
 };
 

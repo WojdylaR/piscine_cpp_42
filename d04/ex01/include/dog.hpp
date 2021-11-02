@@ -2,6 +2,7 @@
 # define DOG_HPP
 
 #include "animal.hpp"
+#include "brain.hpp"
 
 class Dog : virtual public Animal
 {
@@ -14,7 +15,8 @@ class Dog : virtual public Animal
 
         Dog & operator=(Dog const &op);
 
-    protected :
+    private :
+        Brain* _brain;
 
 };
 
