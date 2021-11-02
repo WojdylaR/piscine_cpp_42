@@ -14,6 +14,11 @@ DiamondTrap::~DiamondTrap()
     std::cout << "Diamond Trap Destructor called" << std::endl;
 }
 
+DiamondTrap::DiamondTrapp(DiamondTrap const & copy)
+{
+    *this = copy;
+}
+
 DiamondTrap & DiamondTrap::operator=(DiamondTrap const &op)
 {
     std::cout << "Assignment operator called" << std::endl;

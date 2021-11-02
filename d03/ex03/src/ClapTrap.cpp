@@ -14,6 +14,11 @@ ClapTrap::ClapTrap(std::string name) : _name(name)
     std::cout << "Claptrap constructor called" << std::endl;
 }
 
+ClapTrap::ClapTrap(ClapTrap const & copy)
+{
+    *this = copy;
+}
+
 ClapTrap::ClapTrap(const ClapTrap& copy)
 {
     this->_attackdamage = copy._attackdamage;
