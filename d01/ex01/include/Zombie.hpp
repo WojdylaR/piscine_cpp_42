@@ -15,7 +15,6 @@ class Zombie
     void    Set_name(std::string name);
     Zombie* ZombieHorde(int N, std::string name);
     void    announce();
-    void    ft_delete();
 
     private :
 
