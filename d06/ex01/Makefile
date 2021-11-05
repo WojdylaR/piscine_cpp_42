@@ -1,4 +1,4 @@
-NAME     := Animal
+NAME     := Serialize
 
 SRCS     := src/main.cpp
 

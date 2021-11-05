@@ -1,4 +1,4 @@
-NAME     := Animal
+NAME     := Convertor
 
 SRCS     := src/main.cpp \
 			src/Convertor.cpp

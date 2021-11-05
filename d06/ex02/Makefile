@@ -1,4 +1,4 @@
-NAME     := Animal
+NAME     := Base
 
 SRCS     := src/main.cpp \
 			src/C.cpp \
